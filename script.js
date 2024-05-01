@@ -82,7 +82,7 @@ $.ajax({
       headers: { Authorization: "KakaoAK 0c914d06e7b07c027a9992eaa89ad62b" },
       data: { query: `${dailyMov[rank].movieNm} 영화 포스터` },
     }).done(function (msg) {
-      const dailyImg = `<img class="card" src="${msg.documents[0].image_url}">`;
+      const dailyImg = `<img class="card" src="${msg.documents[0].thumbnail_url}">`;
 
       document.getElementById(`dailyCard${[rank]}`).insertAdjacentHTML("afterbegin", dailyImg);
     });
@@ -168,7 +168,7 @@ $.ajax({
       headers: { Authorization: "KakaoAK 0c914d06e7b07c027a9992eaa89ad62b" },
       data: { query: `${weeklyMov[rank].movieNm} 영화 포스터` },
     }).done(function (msg) {
-      const weeklyImg = `<img class="card" src="${msg.documents[0].image_url}">`;
+      const weeklyImg = `<img class="card" src="${msg.documents[0].thumbnail_url}">`;
 
       document.getElementById(`weeklyCard${[rank]}`).insertAdjacentHTML("afterbegin", weeklyImg);
     });
