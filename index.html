@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <title>한국영화 박스오피스 순위 - KOREAN MOVIE BOX OFFICE RANKING</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" as="style" crossorigin
+        href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/static/pretendard-dynamic-subset.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div id="BG"></div>
+
+    <header>
+        <div id="heroKOR">
+            한국영화 박스오피스 순위
+        </div>
+        <div id="hero">
+            <img src="data/deco1.svg" alt="">
+            <div id="mainTitle">KOREAN MOVIE<br>BOX OFFICE RANKING</div>
+            <img src="data/deco2.svg" alt="">
+        </div>
+    </header>
+
+    <div id="contents">
+
+        <div class="section" id="dailySection">
+
+            <div class="subtitleContainer">
+                <div class="subtitleInfo">
+                    <div class="subtitleKOR">
+                        일별 박스오피스
+                    </div>
+                    <div class="date"  id="dailyDate">
+
+                    </div>
+                </div>
+                <div class="subtitleENG">
+                    DAILY BOX OFFICE
+                </div>
+            </div>
+
+            <div class="cardContents" id="dailyCards">
+            </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="section">
+
+            <div class="subtitleContainer">
+                <div class="subtitleInfo">
+                    <div class="subtitleKOR">
+                        주간 박스오피스
+                    </div>
+                    <div class="date"  id="weeklyDate">
+
+                    </div>
+                </div>
+                <div class="subtitleENG">
+                    WEEKLY BOX OFFICE
+                </div>
+            </div>
+
+            <div class="cardContents" id="weeklyCards">
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div id="rightText">
+            Copyright 2024. Designer DK All rights reserved.
+        </div>
+        <img src="data/dklogo.svg" alt="">
+        <div>
+            Contact : tupacalypse@naver.com
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
