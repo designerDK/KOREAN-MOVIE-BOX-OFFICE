@@ -4,13 +4,11 @@ const month = (today.getMonth() + 1).toString().padStart(2, '0');
 const day = (today.getDate() -1).toString().padStart(2, '0'); 
 
 const yyyymmdd = `${year}${month}${day}`;
-console.log(yyyymmdd);
 
 let week = (today.getDate() -7).toString().padStart(2, '0'); 
 if(week < 0) {week = '00'};
 
 const yyyymmWeek = `${year}${month}${week}`;
-console.log(yyyymmWeek);
 
 let dailyDateInfo = `| 기준일: ${year}-${month}-${day}`;
 if(day == '00') {
@@ -107,7 +105,6 @@ $.ajax({
   data: { key: "78c30f0f607a72b6f3d5c9a5bfc7db00", targetDt: yyyymmWeek, weekGb: "0"},
 }).done(function (msg) {
   let weeklyMov = msg.boxOfficeResult.weeklyBoxOfficeList;
-  console.log(msg.boxOfficeResult);
 
   let downIcon = `<img class="upDown" src="data/down.svg" alt="">`
   let upIcon = `<img class="upDown" src="data/up.svg" alt="">`
