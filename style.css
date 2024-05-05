@@ -64,7 +64,7 @@ header {
         padding-bottom: 60px;
 
         & .subtitleContainer {
-            width: 1024px;
+            width: 972px;
             display: flex;
             flex-direction: column;
 
@@ -98,23 +98,24 @@ header {
 
         & .cardContents {
             display: grid;
-            grid-template-columns: repeat(4, 238px);
+            grid-template-columns: repeat(3, 300px);
             justify-content: center;
             row-gap: 60px;
-            column-gap: 24px;
+            column-gap: 36px;
 
             & .cardContainer {
                 display: flex;
-                flex-direction: column;
-                gap: 12px;
+                align-items: center;
+                gap: 16px;
 
                 & .card {
-                    width: 238px;
-                    height: 297px;
+                    width: 84px;
+                    height: 84px;
                     border-radius: 8px;
                     object-fit: cover;
                 }
                 & .cardInfo {
+                    width: 200px;
                     display: flex;
                     flex-direction: column;
                     gap: 10px;
@@ -139,7 +140,7 @@ header {
                                 font-size: 18px;
                                 font-weight: 600;
                                 line-height: 140%;
-                                width: 167px;
+                                width: 120px;
                                 text-overflow: ellipsis;
                                 overflow: hidden;
                                 white-space: nowrap;
@@ -172,7 +173,7 @@ header {
     }
 }
 .divider {
-    width: 1024px;
+    width: 972px;
     border-bottom: 1px solid #343434;
 }
 
@@ -194,8 +195,8 @@ footer {
         transform:translateX(-50%);
     }  
 }
-
-@media (max-width: 1096px) {
+/* 태블릿 */
+@media (max-width: 1044px) {
     #BG {
     height: 700px;
 }
@@ -223,11 +224,9 @@ header {
     padding-bottom: 200px;
 
     & .section {
-        padding-top: 50px;
-        padding-bottom: 50px;
 
         & .subtitleContainer {
-            width: 754px;
+            width: 636px;
 
             & .subtitleInfo {
 
@@ -241,13 +240,13 @@ header {
         }
 
         & .cardContents {
-            grid-template-columns: repeat(3, 238px);
-            column-gap: 20px;
+            grid-template-columns: repeat(2, 300px);
+
         }
     }
 }
 .divider {
-    width: 754px;
+    width: 636px;
 }
 footer {
     padding: 0px 30px 0px 30px;
@@ -259,135 +258,54 @@ footer {
     }
 }
 }
-
-@media (max-width: 814px) {
+/* 스몰타블렛 */
+@media (max-width: 684px) {
     #BG {
-    height: 600px;
+    height: 450px;
 }
 
 header {
-    padding-top: 80px;
+    padding-top: 70px;
+    padding-bottom: 10px;
+    gap: 4px;
 
     & #hero {
         gap: 16px;
 
         & #mainTitle{
-            font-size: 40px;
-            line-height: 110%;
+            font-size: 42px;
         }
 
         & img {
-            width: 22px;
+            width: 24px;
+            padding-bottom: 2px;
         }
     }
     & #heroKOR {
-        font-size: 14px;
-        letter-spacing: 0.4em;
+        font-size: 15px;
+        letter-spacing: 0.45em;
     }
 }
 #contents {
-    padding-bottom: 180px;
-
-    & .section {
-
-        & .subtitleContainer {
-            width: 492px;
-
-            & .subtitleInfo {
-
-                & .subtitleKOR {
-                    font-size: 16px;
-                }
-            }
-            & .subtitleENG {
-                font-size: 24px;
-            }
-        }
-
-        & .cardContents {
-            grid-template-columns: repeat(2, 238px);
-            column-gap: 16px;
-        }
-    }
-}
-.divider {
-    width: 492px;
-}
-footer {
-    padding: 0px 24px 0px 24px;
-
-    & #rightText {
-        display: none;
-    }
-
-    & img {
-        position: relative;
-        left: 0%;
-        transform: translateX(0%);
-    }
-}
-}
-
-@media (max-width: 740px) {
-    #BG {
-    height: 300px;
-}
-
-header {
-    padding-top: 60px;
-    padding-bottom: 10px;
-    gap: 4px;
-
-    & #hero {
-        gap: 10px;
-
-        & #mainTitle{
-            font-size: 27px;
-        }
-
-        & img {
-            width: 15px;
-            padding-bottom: 4px;
-        }
-    }
-    & #heroKOR {
-        font-size: 12px;
-        letter-spacing: 0.3em;
-    }
-}
-#contents {
-    padding: 0px 16px 0px 16px;
+    padding: 0px 20px 0px 20px;
     padding-bottom: 160px;
 
     & .section {
         width: 100%;
-        gap: 28px;
 
         & .subtitleContainer {
             width: 100%;
         }
         & .cardContents {
-            display: grid;
-            grid-template-columns: repeat(1, 1fr);
-            justify-content: center;
-            row-gap: 50px;
-            column-gap: 12px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
 
             & .cardContainer {
-                display: flex;
-                flex-direction: column;
-                gap: 12px;
 
-                & .card {
-                    width: 100%;
-                    height: 100%;
-                    border-radius: 8px;
-                    object-fit: cover;
-                }
+
                 & .cardInfo {
-                    display: flex;
-                    flex-direction: column;
-                    gap: 4px;
+                    width: 100%;
 
                     & .cardInfoMain {
 
@@ -410,8 +328,41 @@ footer {
     padding: 0px 16px 0px 16px;
     justify-content: center;
 
+    & #rightText {
+        display: none;
+    }
+
     & img {
         display: none;
+    }
+}
+}
+/* 모바일 */
+@media (max-width: 540px) {
+    #BG {
+    height: 300px;
+}
+
+header {
+    padding-top: 60px;
+    padding-bottom: 10px;
+    gap: 4px;
+
+    & #hero {
+        gap: 10px;
+
+        & #mainTitle{
+            font-size: 30px;
+        }
+
+        & img {
+            width: 18px;
+            padding-bottom: 4px;
+        }
+    }
+    & #heroKOR {
+        font-size: 13px;
+        letter-spacing: 0.25em;
     }
 }
 }

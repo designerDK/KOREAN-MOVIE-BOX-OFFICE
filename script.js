@@ -83,6 +83,7 @@ $.ajax({
       data: { query: `${dailyMov[rank].movieNm} 영화 포스터` },
     }).done(function (msg) {
       const dailyImg = `<img class="card" src="${msg.documents[0].thumbnail_url}">`;
+      console.log(dailyImg);
 
       document.getElementById(`dailyCard${[rank]}`).insertAdjacentHTML("afterbegin", dailyImg);
     });
