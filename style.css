@@ -150,6 +150,7 @@ header {
                             display: flex;
                             gap: 4px;
                             align-items: center;
+                            color: #C9C9C9;
 
                             & .ratingNum {
                                 font-size: 14px;
@@ -195,7 +196,7 @@ footer {
         transform:translateX(-50%);
     }  
 }
-/* 태블릿 */
+/* 라지태블릿 */
 @media (max-width: 1044px) {
     #BG {
     height: 700px;
