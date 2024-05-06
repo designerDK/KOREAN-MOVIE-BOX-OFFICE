@@ -28,6 +28,7 @@ header {
         justify-content: center;
 
         & #mainTitle{
+            margin: 0px;
             font-family: "Barlow Semi Condensed";
             font-weight: 600;
             font-size: 70px;
@@ -42,6 +43,7 @@ header {
         }
     }
     & #heroKOR {
+        margin: 0px;
         color: #FFA800;
         font-size: 20px;
         font-weight: 500;
@@ -74,6 +76,7 @@ header {
                 gap: 10px;
 
                 & .subtitleKOR {
+                    margin: 0px;
                     font-weight: 600;
                     font-size: 18px;
                     line-height: 100%;
@@ -87,6 +90,7 @@ header {
                 }
             }
             & .subtitleENG {
+                margin: 0px;
                 font-family: "Barlow Semi Condensed";
                 font-weight: 600;
                 font-size: 28px;

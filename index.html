@@ -5,7 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <meta name="description" 
+    content="한국영화 박스오피스 순위를 보여주는 홈페이지입니다. 최신 일별 박스오피스와 주간 박스오피스 순위, 개봉일, 누적 관객수 등의 정보를 한눈에 확인하실 수 있습니다. 
+    This is a website showing the ranking of box office hits in South Korea. You can easily check the latest daily and weekly box office rankings, release dates, cumulative audience numbers, and more at a glance">
+    <meta name="author" content="designerDK">
+    <meta name="keywords" content="한국영화, 박스오피스, 순위, 영화순위, 랭킹, 일별박스오피스, 주간박스오피스, KOREAN MOVIE, BOX OFFICE, RANKING, DAILY BOX OFFICE, WEEKLY BOX OFFICE">
+    
     <title>한국영화 박스오피스 순위 - KOREAN MOVIE BOX OFFICE RANKING</title>
     <link rel="icon" href="data/favicon.png">
     <link rel="stylesheet" href="style.css">
@@ -16,18 +21,19 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 
 <body>
     <div id="BG"></div>
 
     <header>
-        <div id="heroKOR">
+        <h1 id="heroKOR">
             한국영화 박스오피스 순위
-        </div>
+        </h1>
         <div id="hero">
             <img src="data/deco1.svg" alt="">
-            <div id="mainTitle">KOREAN MOVIE<br>BOX OFFICE RANKING</div>
+            <h1 id="mainTitle">KOREAN MOVIE<br>BOX OFFICE RANKING</h1>
             <img src="data/deco2.svg" alt="">
         </div>
     </header>
@@ -38,16 +44,16 @@
 
             <div class="subtitleContainer">
                 <div class="subtitleInfo">
-                    <div class="subtitleKOR">
+                    <h2 class="subtitleKOR">
                         일별 박스오피스
-                    </div>
+                    </h2>
                     <div class="date"  id="dailyDate">
 
                     </div>
                 </div>
-                <div class="subtitleENG">
+                <h2 class="subtitleENG">
                     DAILY BOX OFFICE
-                </div>
+                </h2>
             </div>
 
             <div class="cardContents" id="dailyCards">
@@ -60,16 +66,16 @@
 
             <div class="subtitleContainer">
                 <div class="subtitleInfo">
-                    <div class="subtitleKOR">
+                    <h2 class="subtitleKOR">
                         주간 박스오피스
-                    </div>
+                    </h2>
                     <div class="date"  id="weeklyDate">
 
                     </div>
                 </div>
-                <div class="subtitleENG">
+                <h2 class="subtitleENG">
                     WEEKLY BOX OFFICE
-                </div>
+                </h2>
             </div>
 
             <div class="cardContents" id="weeklyCards">
