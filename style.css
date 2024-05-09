@@ -12,18 +12,24 @@ body {
     height: 800px;
     z-index: -1;
 }
-
 header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding-top: 120px;
+    padding-bottom: 40px;
+}
+
+.headerContainer {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 8px;
-    padding-top: 120px;
-    padding-bottom: 40px;
 
     & #hero {
         display: flex;
-        gap: 26px;
+        gap: 16px;
         align-items:center;
         justify-content: center;
 
@@ -31,7 +37,7 @@ header {
             margin: 0px;
             font-family: "Barlow Semi Condensed";
             font-weight: 600;
-            font-size: 70px;
+            font-size: 60px;
             line-height: 115%;
             text-align: center;
             color: white;
@@ -40,6 +46,7 @@ header {
 
         & img {
             padding-top: 8px;
+            width: 34px;
         }
     }
     & #heroKOR {
@@ -47,7 +54,7 @@ header {
         color: #FFA800;
         font-size: 20px;
         font-weight: 500;
-        letter-spacing: 0.7em;
+        letter-spacing: 0.5em;
     }
 }
 #contents {
@@ -205,9 +212,13 @@ footer {
     #BG {
     height: 700px;
 }
-
 header {
+    display: flex;
+    flex-direction: column;
     padding-top: 100px;
+    padding-bottom: 40px;
+}
+.headerContainer {
 
     & #hero {
         gap: 20px;
@@ -268,10 +279,13 @@ footer {
     #BG {
     height: 450px;
 }
-
 header {
+    display: flex;
+    flex-direction: column;
     padding-top: 70px;
     padding-bottom: 10px;
+}
+.headerContainer {
     gap: 4px;
 
     & #hero {
@@ -347,10 +361,13 @@ footer {
     #BG {
     height: 300px;
 }
-
 header {
+    display: flex;
+    flex-direction: column;
     padding-top: 60px;
     padding-bottom: 10px;
+}
+.headerContainer {
     gap: 4px;
 
     & #hero {
