@@ -27,13 +27,13 @@ header {
     align-items: center;
     gap: 8px;
 
-    & #hero {
+#hero {
         display: flex;
         gap: 16px;
         align-items:center;
         justify-content: center;
-
-        & #mainTitle{
+    
+        #mainTitle{
             margin: 0px;
             font-family: "Barlow Semi Condensed";
             font-weight: 600;
@@ -44,12 +44,12 @@ header {
 
         }
 
-        & img {
+        img {
             padding-top: 8px;
             width: 34px;
         }
     }
-    & #heroKOR {
+    #heroKOR {
         margin: 0px;
         color: #FFA800;
         font-size: 20px;
@@ -391,14 +391,3 @@ header {
 
 
 
-
-#mainTitle{
-    margin: 0px;
-    font-family: "Barlow Semi Condensed";
-    font-weight: 600;
-    font-size: 60px;
-    line-height: 115%;
-    text-align: center;
-    color: white;
-
-}
