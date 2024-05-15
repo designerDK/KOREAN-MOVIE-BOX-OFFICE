@@ -26,14 +26,14 @@ header {
     flex-direction: column;
     align-items: center;
     gap: 8px;
-
+}
 #hero {
         display: flex;
         gap: 16px;
         align-items:center;
         justify-content: center;
-    
-        #mainTitle{
+}
+#mainTitle{
             margin: 0px;
             font-family: "Barlow Semi Condensed";
             font-weight: 600;
@@ -42,21 +42,21 @@ header {
             text-align: center;
             color: white;
 
-        }
+}
 
-        img {
+#mainTitle img {
             padding-top: 8px;
             width: 34px;
         }
-    }
-    #heroKOR {
+    
+#heroKOR {
         margin: 0px;
         color: #FFA800;
         font-size: 20px;
         font-weight: 500;
         letter-spacing: 0.5em;
-    }
 }
+
 #contents {
     padding-bottom: 220px;
     display: flex;
